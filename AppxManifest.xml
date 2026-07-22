@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+    xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+    xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+    xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+    IgnorableNamespaces="uap mp">
+
+    <Identity
+        Name="YashPro005.ImalandMultiplayer"
+        Publisher="CN=yashpro005"
+        Version="1.0.0.0" />
+
+    <Properties>
+        <DisplayName>Imaland: Sands of Redemption - Multiplayer</DisplayName>
+        <PublisherDisplayName>Yash Pro</PublisherDisplayName>
+        <Logo>Assets\StoreLogo.png</Logo>
+    </Properties>
+
+    <Dependencies>
+        <TargetDeviceFamily Name="Windows.Desktop" MinVersion="10.0.17763.0" MaxVersionTested="10.0.19041.0" />
+    </Dependencies>
+
+    <Resources>
+        <Resource Language="en-us" />
+    </Resources>
+
+    <Applications>
+        <Application
+            Id="App"
+            StartPage="imaland_multiplayer.py"
+            ExecutionAlias="ImalandMultiplayer!App">
+
+            <uap:VisualElements
+                DisplayName="Imaland: Sands of Redemption"
+                Square150x150Logo="Assets\Square150x150Logo.png"
+                Square44x44Logo="Assets\Square44x44Logo.png"
+                Description="A 3D multiplayer voxel-based survival game set in the desert world of Imaland. Explore, build, mine, and collaborate with other players. Features Terabox cloud sync for persistent saves."
+                BackgroundColor="transparent">
+                <uap:SplashScreen Image="Assets\SplashScreen.png" />
+                <uap:InitialRotationPreference>
+                    <uap:Rotation Preference="portrait" />
+                    <uap:Rotation Preference="landscape" />
+                    <uap:Rotation Preference="portraitFlipped" />
+                    <uap:Rotation Preference="landscapeFlipped" />
+                </uap:InitialRotationPreference>
+            </uap:VisualElements>
+
+            <uap:Extension Category="windows.protocol">
+                <uap:Protocol Name="imaland" />
+            </uap:Extension>
+
+        </Application>
+    </Applications>
+
+    <Capabilities>
+        <Capability Name="internetClient" />
+        <Capability Name="internetClientServer" />
+        <uap:Capability Name="documentsLibrary" />
+    </Capabilities>
+
+</Package>

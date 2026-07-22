@@ -1,0 +1,135 @@
+{
+  "crafting_recipes": {
+    "rope": {
+      "name": "Rope",
+      "type": "crafting_table",
+      "input": [
+        {"item": "grass_fiber", "count": 3},
+        {"item": "animal_fiber", "count": 1}
+      ],
+      "output": {"item": "rope", "count": 2},
+      "time": 5.0,
+      "description": "Twisted fiber rope for climbing and binding"
+    },
+    "cloth": {
+      "name": "Cloth",
+      "type": "crafting_table",
+      "input": [
+        {"item": "grass_fiber", "count": 4}
+      ],
+      "output": {"item": "cloth", "count": 1},
+      "time": 3.0,
+      "description": "Woven cloth material"
+    },
+    "brick": {
+      "name": "Clay Brick",
+      "type": "furnace",
+      "input": [
+        {"item": "clay", "count": 1}
+      ],
+      "output": {"item": "brick_fragment", "count": 1},
+      "time": 10.0,
+      "description": "Fire-hardened clay brick",
+      "fuel_required": 0.5
+    },
+    "concrete": {
+      "name": "Concrete Block",
+      "type": "crafting_table",
+      "input": [
+        {"item": "stone_dust", "count": 2},
+        {"item": "brick_fragment", "count": 1}
+      ],
+      "output": {"item": "concrete_block", "count": 1},
+      "time": 8.0,
+      "description": "Strong durable concrete"
+    },
+    "stamina_potion": {
+      "name": "Stamina Potion",
+      "type": "crafting_table",
+      "input": [
+        {"item": "herb", "count": 2},
+        {"item": "water_bucket", "count": 1}
+      ],
+      "output": {"item": "stamina_potion", "count": 1},
+      "time": 6.0,
+      "description": "Restore 30 stamina on consumption"
+    },
+    "tithe_ingot": {
+      "name": "Tithe-Ingot (Smelting)",
+      "type": "furnace",
+      "input": [
+        {"item": "tithe_ore", "count": 1}
+      ],
+      "output": {"item": "tithe_ingot", "count": 1},
+      "time": 15.0,
+      "description": "Smelt Tithe-Ore into ingots",
+      "fuel_required": 1.0,
+      "special_properties": ["glowing"]
+    },
+    "magical_tool": {
+      "name": "Magical Pickaxe",
+      "type": "crafting_table",
+      "input": [
+        {"item": "tithe_ingot", "count": 3},
+        {"item": "wood_log", "count": 1},
+        {"item": "mystical_dust", "count": 1}
+      ],
+      "output": {"item": "magical_pickaxe", "count": 1},
+      "time": 12.0,
+      "description": "Mine faster and extract rare materials",
+      "rarity": "rare"
+    },
+    "portal_key": {
+      "name": "Portal Key",
+      "type": "crafting_table",
+      "input": [
+        {"item": "portal_shard", "count": 1},
+        {"item": "tithe_ingot", "count": 2},
+        {"item": "mystical_dust", "count": 3}
+      ],
+      "output": {"item": "portal_key", "count": 1},
+      "time": 20.0,
+      "description": "Opens passage to other worlds",
+      "rarity": "legendary"
+    },
+    "workbench": {
+      "name": "Workbench",
+      "type": "crafting_table",
+      "input": [
+        {"item": "wood_log", "count": 4},
+        {"item": "stone_dust", "count": 2}
+      ],
+      "output": {"item": "workbench_block", "count": 1},
+      "time": 10.0,
+      "description": "Craft items more efficiently"
+    },
+    "furnace": {
+      "name": "Furnace",
+      "type": "crafting_table",
+      "input": [
+        {"item": "brick_fragment", "count": 8}
+      ],
+      "output": {"item": "furnace_block", "count": 1},
+      "time": 8.0,
+      "description": "Smelt ores and cook food"
+    }
+  },
+  "crafting_categories": {
+    "survival": {
+      "name": "Survival",
+      "recipes": ["stamina_potion", "rope", "cloth", "water_bucket"]
+    },
+    "building": {
+      "name": "Building",
+      "recipes": ["brick", "concrete", "workbench", "furnace"]
+    },
+    "tools": {
+      "name": "Tools & Weapons",
+      "recipes": ["magical_tool"]
+    },
+    "magic": {
+      "name": "Magic & Mysticism",
+      "recipes": ["portal_key", "tithe_ingot"]
+    }
+  }
+}

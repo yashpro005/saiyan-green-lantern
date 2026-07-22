@@ -1,0 +1,147 @@
+{
+  "items": {
+    "grass_fiber": {
+      "name": "Grass Fiber",
+      "rarity": "common",
+      "max_stack": 64,
+      "weight": 0.1,
+      "description": "Soft fiber from grass blocks",
+      "obtained_from": ["grass"],
+      "crafting_uses": ["rope", "cloth"]
+    },
+    "stone_dust": {
+      "name": "Stone Dust",
+      "rarity": "common",
+      "max_stack": 64,
+      "weight": 0.2,
+      "description": "Fine powder from crushed stone",
+      "obtained_from": ["stone"],
+      "crafting_uses": ["concrete", "mortar"]
+    },
+    "tithe_ore": {
+      "name": "Tithe-Ore",
+      "rarity": "rare",
+      "max_stack": 16,
+      "weight": 1.5,
+      "description": "Glowing ore of ancient power",
+      "obtained_from": ["ore"],
+      "smelts_to": "tithe_ingot",
+      "special_properties": ["glowing", "magical"],
+      "crafting_uses": ["magical_tools", "enchanted_armor"]
+    },
+    "tithe_ingot": {
+      "name": "Tithe-Ingot",
+      "rarity": "rare",
+      "max_stack": 32,
+      "weight": 1.0,
+      "description": "Refined ingot of Tithe-Ore",
+      "obtained_from": ["tithe_ore"],
+      "crafting_uses": ["magical_tools", "weapons", "armor"]
+    },
+    "animal_fiber": {
+      "name": "Animal Fiber",
+      "rarity": "uncommon",
+      "max_stack": 32,
+      "weight": 0.15,
+      "description": "Fiber from desert creatures",
+      "obtained_from": ["animal"],
+      "crafting_uses": ["rope", "saddle", "cloth"]
+    },
+    "bone": {
+      "name": "Bone",
+      "rarity": "uncommon",
+      "max_stack": 32,
+      "weight": 0.5,
+      "description": "Bone from creatures",
+      "obtained_from": ["animal"],
+      "crafting_uses": ["tools", "weapons", "ornaments"]
+    },
+    "wood_log": {
+      "name": "Wood Log",
+      "rarity": "common",
+      "max_stack": 64,
+      "weight": 0.8,
+      "description": "Log from wooden structures",
+      "obtained_from": ["planks"],
+      "crafting_uses": ["planks", "tools", "furniture"]
+    },
+    "brick_fragment": {
+      "name": "Brick Fragment",
+      "rarity": "common",
+      "max_stack": 64,
+      "weight": 0.3,
+      "description": "Fragment of crafted brick",
+      "obtained_from": ["brick"],
+      "crafting_uses": ["brick", "concrete"]
+    },
+    "clay": {
+      "name": "Clay",
+      "rarity": "common",
+      "max_stack": 64,
+      "weight": 0.4,
+      "description": "Raw clay for crafting",
+      "obtained_from": ["sand"],
+      "crafting_uses": ["brick", "pottery", "clay_blocks"]
+    },
+    "stamina_potion": {
+      "name": "Stamina Potion",
+      "type": "consumable",
+      "rarity": "uncommon",
+      "max_stack": 16,
+      "weight": 0.2,
+      "description": "Restores 30 stamina when consumed",
+      "effect": {
+        "stamina_restore": 30,
+        "duration": 0
+      },
+      "crafting_recipe": ["herb", "water", "sugar"]
+    },
+    "herb": {
+      "name": "Herb",
+      "rarity": "common",
+      "max_stack": 64,
+      "weight": 0.05,
+      "description": "Desert herb for potions",
+      "found_in": ["sand", "grass"],
+      "crafting_uses": ["stamina_potion", "health_potion"]
+    },
+    "water_bucket": {
+      "name": "Water Bucket",
+      "type": "tool",
+      "rarity": "uncommon",
+      "max_stack": 1,
+      "weight": 2.0,
+      "description": "Carry water from sources",
+      "uses": ["water_transport", "farming"],
+      "durability": 1000
+    },
+    "portal_shard": {
+      "name": "Portal Shard",
+      "rarity": "legendary",
+      "max_stack": 1,
+      "weight": 0.1,
+      "description": "Fragment of portal energy - highly unstable",
+      "special_properties": ["glowing", "teleporting", "dangerous"],
+      "crafting_uses": ["portal_key"]
+    },
+    "portal_key": {
+      "name": "Portal Key",
+      "type": "key",
+      "rarity": "legendary",
+      "max_stack": 1,
+      "weight": 0.3,
+      "description": "Opens gates to other worlds",
+      "uses": ["unlock_portal"],
+      "crafting_recipe": ["portal_shard", "tithe_ingot", "mystical_dust"]
+    },
+    "mystical_dust": {
+      "name": "Mystical Dust",
+      "rarity": "rare",
+      "max_stack": 32,
+      "weight": 0.05,
+      "description": "Dust from mystical entities",
+      "obtained_from": ["mythic_entity"],
+      "crafting_uses": ["enchantments", "potions", "portal_key"]
+    }
+  }
+}

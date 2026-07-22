@@ -1,0 +1,85 @@
+{
+  "animations": {
+    "player": {
+      "walk": {
+        "speed": 0.1,
+        "blend_time": 0.2
+      },
+      "run": {
+        "speed": 0.15,
+        "blend_time": 0.2,
+        "stamina_drain_rate": 0.15
+      },
+      "jump": {
+        "force": 5.0,
+        "duration": 0.5,
+        "cooldown": 0.1
+      },
+      "mine": {
+        "duration": 0.6,
+        "cooldown": 0.4
+      },
+      "place_block": {
+        "duration": 0.3,
+        "cooldown": 0.2
+      }
+    },
+    "entities": {
+      "villager": {
+        "idle": {
+          "speed": 0.05,
+          "loop": true
+        },
+        "walk": {
+          "speed": 0.08,
+          "blend_time": 0.2
+        },
+        "talk": {
+          "speed": 0.1,
+          "duration": 2.0
+        }
+      },
+      "animal": {
+        "idle": {
+          "speed": 0.03,
+          "loop": true
+        },
+        "walk": {
+          "speed": 0.1,
+          "blend_time": 0.15
+        },
+        "run": {
+          "speed": 0.15,
+          "blend_time": 0.15
+        }
+      },
+      "mythic_entity": {
+        "idle": {
+          "speed": 0.02,
+          "loop": true,
+          "glow_pulse": true
+        },
+        "communicate": {
+          "speed": 0.08,
+          "duration": 3.0,
+          "particle_effect": "mystical_aura"
+        }
+      }
+    },
+    "blocks": {
+      "portal": {
+        "rotation": {
+          "axis": [0, 1, 0],
+          "speed": 2.0,
+          "loop": true
+        },
+        "pulse_scale": {
+          "min": 0.95,
+          "max": 1.05,
+          "speed": 1.5,
+          "loop": true
+        }
+      }
+    }
+  }
+}

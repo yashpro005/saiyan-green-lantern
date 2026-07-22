@@ -1,0 +1,66 @@
+{
+  "sound_effects": {
+    "grass": {
+      "footstep": "sounds/grass_footstep.wav",
+      "break": "sounds/grass_break.wav",
+      "place": "sounds/grass_place.wav",
+      "volume": 0.7,
+      "pitch_variance": 0.1
+    },
+    "sand": {
+      "footstep": "sounds/sand_footstep.wav",
+      "break": "sounds/sand_break.wav",
+      "place": "sounds/sand_place.wav",
+      "volume": 0.6,
+      "pitch_variance": 0.15
+    },
+    "stone": {
+      "footstep": "sounds/stone_footstep.wav",
+      "break": "sounds/stone_break.wav",
+      "place": "sounds/stone_place.wav",
+      "volume": 0.8,
+      "pitch_variance": 0.1
+    },
+    "ore": {
+      "break": "sounds/ore_break.wav",
+      "place": "sounds/ore_place.wav",
+      "volume": 1.0,
+      "pitch_variance": 0.05,
+      "description": "Deep, resonant sound of Tithe-Ore"
+    },
+    "water": {
+      "splash": "sounds/water_splash.wav",
+      "flow": "sounds/water_flow.wav",
+      "volume": 0.5,
+      "loop_flow": true
+    },
+    "portal": {
+      "activate": "sounds/portal_activate.wav",
+      "ambient": "sounds/portal_ambient.wav",
+      "teleport": "sounds/portal_teleport.wav",
+      "volume": 0.9,
+      "loop_ambient": true
+    },
+    "ui": {
+      "select": "sounds/ui_select.wav",
+      "hover": "sounds/ui_hover.wav",
+      "confirm": "sounds/ui_confirm.wav",
+      "error": "sounds/ui_error.wav",
+      "volume": 0.6
+    },
+    "entity": {
+      "villager_talk": "sounds/villager_talk.wav",
+      "animal_sound": "sounds/animal_sound.wav",
+      "mythic_sound": "sounds/mythic_sound.wav",
+      "volume": 0.8
+    },
+    "environment": {
+      "rain_ambient": "sounds/rain_ambient.wav",
+      "wind": "sounds/wind.wav",
+      "storm_thunder": "sounds/storm_thunder.wav",
+      "volume": 0.4,
+      "loop_rain": true,
+      "loop_wind": true
+    }
+  }
+}

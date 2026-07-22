@@ -1,0 +1,76 @@
+{
+  "npcs": {
+    "villager": {
+      "name": "Villager",
+      "type": "npc",
+      "model": "humanoid_basic",
+      "color": [200, 150, 120],
+      "scale": 1.0,
+      "dialogues": [
+        "Welcome to Imaland, traveler.",
+        "The sands are harsh today.",
+        "Have you seen the ruins to the North?",
+        "The portals have been opening more frequently.",
+        "Be careful in the storm."
+      ],
+      "interactions": [
+        {
+          "type": "trade",
+          "description": "Exchange goods with this villager"
+        },
+        {
+          "type": "quest",
+          "description": "Receive a quest from this villager"
+        }
+      ],
+      "behavior": "friendly",
+      "spawn_rate": 0.003
+    },
+    "animal": {
+      "name": "Desert Creature",
+      "type": "creature",
+      "model": "quadruped_basic",
+      "color": [150, 75, 0],
+      "scale": 0.8,
+      "sounds": [
+        "*The creature tilts its head curiously*",
+        "*Soft rustling noises*",
+        "*A friendly low growl*"
+      ],
+      "behavior": "passive",
+      "ai_type": "wanderer",
+      "spawn_rate": 0.005,
+      "drops": ["animal_fiber", "bone"]
+    },
+    "mythic_entity": {
+      "name": "Mystical Being",
+      "type": "mythical",
+      "model": "ethereal_form",
+      "color": [0, 255, 255],
+      "scale": 1.2,
+      "glow": true,
+      "dialogues": [
+        "I have seen worlds beyond the portals.",
+        "The Tithe-Ore holds secrets of the ancients.",
+        "Your stamina is but a flicker in the storm.",
+        "The Emerald Eclipse demands respect.",
+        "Seek wisdom in the ruins."
+      ],
+      "interactions": [
+        {
+          "type": "blessing",
+          "effect": "stamina_boost",
+          "amount": 20,
+          "description": "Receive a blessing to restore stamina"
+        },
+        {
+          "type": "knowledge",
+          "description": "Gain knowledge about the world"
+        }
+      ],
+      "behavior": "benevolent",
+      "spawn_rate": 0.001,
+      "rarity": "legendary"
+    }
+  }
+}
